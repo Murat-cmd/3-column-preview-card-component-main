@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca',serif;
+}
+
+body{
+    background-color: hsl(0, 0%, 95%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 10px;
+    
+}
+
+.sedans{
+    border-radius: 10px 10px 0px 0px ;
+}
+
+.luxury{
+    border-radius: 0px 0px 10px 10px ;
+}
+
+
+.sedans, .suvs, .luxury{
+    padding: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.sedans{
+    background-color:  hsl(31, 77%, 52%);
+}
+.suvs{
+    background-color:  hsl(184, 100%, 22%);
+}
+.luxury{
+    background-color:  hsl(179, 100%, 13%);
+}
+
+
+
+img.logo{
+    width: fit-content;
+}
+
+.car-name{
+    font-family: 'Big Shoulders Display',sans-serif;
+    font-size: 2.5em;
+    color: hsl(0, 0%, 95%);
+    font-weight: 500;
+}
+
+.description{
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.action-button{
+    height: 13%;
+    width: fit-content;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 50px;
+    background-color: hsl(0, 0%, 95%);
+    font-weight: 700;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(31, 77%, 52%);
+}
+
+.action-btn-2{
+    color: hsl(184, 100%, 22%);
+}
+.action-btn-3{
+    color: hsl(179, 100%, 13%);
+}
+
+
+.action-button:hover{
+ cursor: pointer;
+ background-color: transparent;
+ color: hsl(0, 0%, 95%) ;
+}
+
+
+
+@media (min-width:1024px){
+    .container{
+        height: 60%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .sedans,.luxury{
+      border-radius: 0;
+    }
+}
+
+@media(min-width:1440px){
+    .container{
+        width: 70%;
+        height: 60%;
+    }
+}
